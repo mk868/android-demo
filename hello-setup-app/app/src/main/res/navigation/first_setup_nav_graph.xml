@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/first_setup_nav_graph"
+            app:startDestination="@id/FirstSetupStartFragment">
+
+    <fragment
+            android:id="@+id/FirstSetupStartFragment"
+            android:name="info.kucharczyk.demo.android.hellosetupapp.fragment.FirstSetupStartFragment"
+            android:label="fragment_first_setup_start"
+            tools:layout="@layout/fragment_first_setup_start">
+
+        <action android:id="@+id/action_FirstSetupStartFragment_to_FirstSetupBluetoothFragment"
+                app:destination="@id/FirstSetupBluetoothFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/FirstSetupBluetoothFragment"
+            android:name="info.kucharczyk.demo.android.hellosetupapp.fragment.FirstSetupBluetoothFragment"
+            android:label="fragment_first_setup_bluetooth"
+            tools:layout="@layout/fragment_first_setup_bluetooth">
+        <action android:id="@+id/action_FirstSetupBluetoothFragment_to_firstSetupFileAccessFragment"
+                app:destination="@id/firstSetupFileAccessFragment"/>
+        <action android:id="@+id/action_FirstSetupBluetoothFragment_to_FirstSetupStartFragment"
+                app:destination="@id/FirstSetupStartFragment"/>
+    </fragment>
+    <fragment android:id="@+id/firstSetupFileAccessFragment"
+              android:name="info.kucharczyk.demo.android.hellosetupapp.fragment.FirstSetupFileAccessFragment"
+              android:label="fragment_first_setup_file_access" tools:layout="@layout/fragment_first_setup_file_access">
+        <action android:id="@+id/action_firstSetupFileAccessFragment_to_firstSetupEndFragment"
+                app:destination="@id/firstSetupEndFragment"/>
+        <action android:id="@+id/action_firstSetupFileAccessFragment_to_FirstSetupBluetoothFragment"
+                app:destination="@id/FirstSetupBluetoothFragment"/>
+    </fragment>
+    <fragment android:id="@+id/firstSetupEndFragment"
+              android:name="info.kucharczyk.demo.android.hellosetupapp.fragment.FirstSetupEndFragment"
+              android:label="fragment_first_setup_end" tools:layout="@layout/fragment_first_setup_end">
+        <action android:id="@+id/action_firstSetupEndFragment_to_firstSetupFileAccessFragment"
+                app:destination="@id/firstSetupFileAccessFragment"/>
+    </fragment>
+</navigation>

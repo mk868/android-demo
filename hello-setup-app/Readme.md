@@ -1,0 +1,2 @@
+- Application splash screen
+- First run **Setup Screen** asking for permissions in steps. Used Fragment navigation with nav_graph

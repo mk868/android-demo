@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.FirstSetupEndFragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Done!"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All required settings are set correctly, the application is ready for use."/>
+
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="@string/step_back"
+                    android:layout_width="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="match_parent" android:id="@+id/button_step_back"
+                    android:layout_weight="1"
+                    android:paddingVertical="20dp"/>
+            <Button
+                    android:text="@string/step_finish"
+                    android:layout_width="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="wrap_content" android:id="@+id/button_step_finish"
+                    android:layout_weight="1" android:paddingVertical="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

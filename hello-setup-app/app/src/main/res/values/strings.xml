@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hello Setup App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_permission_setup">PermissionSetupActivity</string>
+    <string name="step_continue">Continue</string>
+    <string name="step_back">Back</string>
+    <string name="button_grant_access">Grant Access</string>
+    <string name="step_finish">Finish</string>
+    <string name="step_exit">Exit</string>
+</resources>

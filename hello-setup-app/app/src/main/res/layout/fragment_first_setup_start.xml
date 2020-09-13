@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.FirstSetupStartFragment">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test app"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="During the first launch, the application requires basic application privileges. Please accept the required permissions in the next pages."/>
+
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="@string/step_exit"
+                    android:layout_width="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="match_parent" android:id="@+id/button_step_exit"
+                    android:layout_weight="1"
+                    android:paddingVertical="20dp"/>
+            <Button
+                    android:text="@string/step_continue"
+                    android:layout_width="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="wrap_content" android:id="@+id/button_step_next"
+                    android:layout_weight="1" android:paddingVertical="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
